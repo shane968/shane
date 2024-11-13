@@ -1,0 +1,233 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styles */
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #14b04b; /* Bootstrap primary color */
+    color: white;
+    padding: 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7e0f08; /* Darker shade of red */
+}
+
+.header-top .contact-info span, 
+.header-links a {
+    margin-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 100px; 
+    margin-right: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background: #047a2f; /* Darker green for hover and active */
+    border-radius: 5px;
+}
+
+/* Banner styles */
+.banner {
+    background: gold;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Main container styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Hostel info styles */
+.hostel-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hostel-info .image {
+    flex: 1;
+    min-width: 300px; /* Responsive image width */
+    margin-right: 20px;
+}
+
+.hostel-info .image img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 8px;
+}
+
+.hostel-info .details {
+    flex: 2;
+}
+
+.hostel-info h1 {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer .text-white a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer .text-white a:hover {
+    color: #007bff; /* Change to Bootstrap primary color on hover */
+}
+
+/* Footer bottom */
+.footer-bottom {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.social-icons a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Default icon color */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Footer section */
+.footer {
+    background-color: #0e0d0d;
+    color: rgb(20, 168, 20);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer h5 {
+    margin: 0 0 10px;
+}
+
+.footer p {
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.footer .links {
+    margin: 20px 0;
+}
+
+.footer .links a {
+    color: rgb(167, 14, 14);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .cta {
+    margin: 20px 0;
+}
+
+.footer .cta button {
+    background-color: #5a1414;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header-top, .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+
+    .hostel-info {
+        flex-direction: column;
+    }
+
+    .hostel-info .image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    
+}

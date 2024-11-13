@@ -1,0 +1,89 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: #00ff3c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the nav links */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    background: #0056b3; /* Darker shade of blue for hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background: #ffffff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* List styles */
+ul {
+    margin-left: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #1aff00;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack the navigation links vertically */
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        width: 100%; /* Make links take full width of the screen */
+        text-align: center;
+        padding: 15px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+}

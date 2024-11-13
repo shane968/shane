@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostels & Accommodation</title>
+    <link rel="stylesheet" href="inqury.css">
+    <a href="index.html" class="home-button">Home</a>
+
+    </head>
+    <body>
+        <div class="logo">
+            <img src="E.png" alt="">
+        </div>
+
+<div class="container">
+    
+
+    <div class="content-section">
+        <h1>INQUIRY</h1>
+       
+        <!-- FAQ Questions and Answers -->
+        <button class="faq-question">What is included in the hostel facilities?</button>
+        <div class="faq-answer">The hostel facilities include shared bathrooms, a kitchen area, a play area, and sports courts, along with 24/7 security monitoring.</div>
+
+        <button class="faq-question">Can I choose my roommates?</button>
+        <div class="faq-answer">Roommate assignments are managed by the university, but you may submit a request if you'd like to room with a specific person.</div>
+
+        <button class="faq-question">Is there internet access in the hostel?</button>
+        <div class="faq-answer">Yes, all hostels are equipped with high-speed Wi-Fi to help students stay connected and work efficiently.</div>
+
+        <button class="faq-question">Are there laundry facilities available?</button>
+        <div class="faq-answer">Yes, the hostel provides laundry facilities accessible to all residents.</div>
+
+        <button class="faq-question">What is the policy on guests?</button>
+        <div class="faq-answer">Guests are allowed during certain hours with prior approval from the hostel administration.</div>
+
+        <button class="faq-question">Is there a curfew for hostel residents?</button>
+        <div class="faq-answer">Yes, the hostel has a curfew policy to ensure the safety of all residents.</div>
+
+        <button class="faq-question">Are meals provided in the hostel?</button>
+        <div class="faq-answer">Meals are not provided in the hostel, but there is a cafeteria nearby for meals at reasonable prices.</div>
+
+        <button class="faq-question">Are there study rooms available in the hostel?</button>
+        <div class="faq-answer">Yes, each hostel has a designated study room for students.</div>
+
+        <button class="faq-question">What are the security measures in place?</button>
+        <div class="faq-answer">Hostels are equipped with 24/7 CCTV surveillance and a security office on-site.</div>
+
+        <button class="faq-question">Can I bring my own furniture?</button>
+        <div class="faq-answer">No, additional furniture is not allowed in the hostel rooms due to space constraints.</div>
+
+        <button class="faq-question">Is there a gym in the hostel?</button>
+        <div class="faq-answer">Yes, a gym facility is available for all hostel residents.</div>
+
+        <button class="faq-question">Are pets allowed in the hostel?</button>
+        <div class="faq-answer">No, pets are not allowed in the hostel.</div>
+
+        <button class="faq-question">Can I stay in the hostel during holidays?</button>
+        <div class="faq-answer">Yes, with prior approval, students can stay in the hostel during holidays.</div>
+
+        <button class="faq-question">How often are the rooms cleaned?</button>
+        <div class="faq-answer">The hostel rooms are cleaned weekly by the housekeeping staff.</div>
+
+        <button class="faq-question">What should I do if I lose my key?</button>
+        <div class="faq-answer">Report the lost key to the administration immediately. They will assist in getting a replacement.</div>
+
+        <button class="faq-question">Are there quiet hours in the hostel?</button>
+        <div class="faq-answer">Yes, quiet hours are enforced from 10 PM to 7 AM to ensure a conducive environment for all residents.</div>
+
+        <button class="faq-question">How many people share a bathroom?</button>
+        <div class="faq-answer">Typically, each bathroom is shared by 4-6 students.</div>
+
+        <button class="faq-question">What items should I bring to the hostel?</button>
+        <div class="faq-answer">Basic necessities like bedding, toiletries, and personal items. A full list is provided upon registration.</div>
+
+        <button class="faq-question">Are there storage options available?</button>
+        <div class="faq-answer">Yes, each room has dedicated storage spaces for all residents.</div>
+
+        <button class="faq-question">Can I move out mid-year if needed?</button>
+        <div class="faq-answer">Yes, you may move out mid-year, but please inform the administration in advance for proper processing.</div>
+
+        <!-- Booking Form Button -->
+        <a href="#" class="booking-btn">Hostel Booking Form</a>
+    </div>
+</div>
+
+<!-- Chat Button -->
+<div class="chat-btn">
+    <a href="https://wa.me" class="whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    How can we help you?
+</div>
+
+<script>
+    // Toggle FAQ answers
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
